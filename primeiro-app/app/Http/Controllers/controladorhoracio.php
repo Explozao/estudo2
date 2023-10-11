@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Produtos;
+
 class controladorhoracio extends Controller
 {
     public function inicio()
@@ -13,7 +15,9 @@ class controladorhoracio extends Controller
 
     public function evento()
     {
-        return view('eventos');
+        $produtos= Produtos::all();
+
+        return view('eventos',['produtos'=> $produtos]);
     }
 
     public function criEvento()
@@ -23,6 +27,6 @@ class controladorhoracio extends Controller
 
     public function cadastrar()
     {
-        return view('cadastrar');
+        return view('cadastrar'); 
     }
 }

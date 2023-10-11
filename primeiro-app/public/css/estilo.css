@@ -32,8 +32,7 @@ a{
 /*fim menu*/
 /*criarprojectoformulario*/
 .formulariocri{
-    padding: 20px;
-    width: 0 100%;
+    width: 100%;
 }
 .formulariodiv{
     margin: 20px auto;
@@ -76,3 +75,50 @@ a{
     border: 1px solid rgb(0, 41, 41);
 }
 /*fim botao*/
+/*eventos*/
+.eventosdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.blocodiv{
+    background-color: black;
+    margin: 20px;
+}
+.guadrado{
+    width: 400px;
+    height: 250px;
+    background-color: aqua;
+}
+.guadradotexto{
+    text-align: center;
+}
+/*eventos*/
+/*bancodiv*/
+.categoria{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    width: 1000px;
+    margin: 20px auto;
+}
+.categoria p{
+    margin:20px ;
+    font-size: 20px;
+    color: black;
+}
+.bancodiv{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(230, 230, 230);
+    border-bottom: 1px solid black;
+
+}
+.bancodiv p{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+/*fim bancodive*/
